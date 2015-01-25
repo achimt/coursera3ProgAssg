@@ -14,7 +14,6 @@ It contains the following files:
 All of these steps are carried out by the R script "run_analysis.R" that calls 4 fuAll of these steps are carried out by the R script "run_analysis.R" that calls 4 functions that carry out the individual steps. All of the files assume that they and their working directory are located in the same directory as the directory containing the UCI HAR dataset. 
 
 ## Files and Dependencies
-### run_analysis.R## Files and Dependencies
 ### run_analysis.R
 This script needs the four functions 'load_dat.R', 'combine_dat.R', 'xtract_columns.R', 'calc_motion_avg.R'. 
 It is run from the R command prompt by sourcing it with the command:

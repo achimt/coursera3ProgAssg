@@ -7,6 +7,7 @@ summarisedActivity.txt
 This file contains averages of the summarised activities from the UCI HAR dataset in a table with 68 columns and 360 rows. Values in the table are derived from accelerometer and gyroscope measurements that have been normalised on a scale from [-1:1]. For each subject (numbered 1-30) 6 activities were monitored: walking (WALKING), walking upstairs (UPSTAIRS), walking downstairs (DOWNSTAIRS), sitting (SITTING), standing (STANDING) and laying (LAYING). 
 
 For each subject and each of the activities, averages from measurements in three spatial dimensions taken at a frequency of 50 Hz and their standard deviations are shown for the following measurements:
+
  [3] "Time_Domain_Body_Acceleration_Mean_X"                    
  [4] "Time_Domain_Body_Acceleration_Mean_Y"                    
  [5] "Time_Domain_Body_Acceleration_Mean_Z"                    
