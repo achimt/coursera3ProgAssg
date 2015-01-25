@@ -33,6 +33,7 @@ It is called from the analyseHumanActivityDataset.R script.
 - activityDataFrames 	- list of dataframes obtained from load_dat()
 - activityDataSet 	- dataframe obtained from calling combine_dat(activityDataFrames). This dataset is transformed into a data table that only contains means and standard deviations of measured variables by calling xtract_columns(activityDataFrames). 
 - summarisedActivity 	- data table obtained from calculating the averages of each variable groubed by activity and subject. 
+
 ### load_dat.R
 - training_set		- 7352 x 561 data frame containing measurements from the UCI HAR training dataset
 - test_set 		- 2947 x 561 data frame containing measurements from the UCI HAR test dataset
@@ -41,6 +42,7 @@ It is called from the analyseHumanActivityDataset.R script.
 - training_subject 	- 7352 x 1 data frame containing subject codes from the UCI HAR training dataset in one column
 - test_subject 		- 2947 x 1 data frame containing subject codes from the UCI HAR test dataset in one column
 - features		- character vector containing descriptions for the measurements in the UCI HAR dataset
+
 ### combine_dat.R
 - frames 			- list of 7 data frames containing all the data
 - training_set		- 7352 x 561 data frame containing measurements from the UCI HAR training dataset
@@ -51,14 +53,15 @@ It is called from the analyseHumanActivityDataset.R script.
 - test_subject 		- 2947 x 1 data frame containing subject codes from the UCI HAR test dataset in one column
 - features		- character vector containing 561 descriptions for the measurements in the UCI HAR dataset
 - data_set		- 10299 x 563 data frame containing annotated measurements from the reunited UCI HAR dataset
+
 ### xtract_columns.R
 - data_set		- 10299 x 563 data frame containing annotated measurements from the reunited UCI HAR dataset
 - features		- character vector containing 563 descriptions for the measurements in the UCI HAR dataset
 - match_cols		- integer vector containing the indices of the 68 columns containing Stdev and Mean of measurements in the UCI HAR dataset
 - motion_dat		- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset
+
 ### calc_motion_avg.R
-- motion_dat	- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset
-This data frame is subsequently transformed into a 360 x 68 data frame, averaging the Means and Stdevs of all measurements
+- motion_dat	- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset. This data table is subsequently transformed into a 360 x 68 data table, averaging the Means and Stdevs of all measurements
 
 ## Transformations
 ### analyseHumanActivityDataset.R
