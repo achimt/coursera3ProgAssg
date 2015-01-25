@@ -2,11 +2,11 @@
 This course project uses the "Human Activity Recognition Using Smartphones Dataset Version 1.0" (UCI HAR dataset), created by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio and Luca Oneto. It was presented with the title "Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine" at the International Workshop of Ambient Assisted Living (IWAAL 2012), Vitoria-Gasteiz, Spain, Dec 2012. 
 ## Summary
 The set task was to do the following:
--Merge the training and the test sets to create one data set.
--Extract only the measurements on the mean and standard deviation for each measurement. 
--Use descriptive activity names to name the activities in the data set
--Appropriately label the data set with descriptive variable names. 
--From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+- Merge the training and the test sets to create one data set.
+- Extract only the measurements on the mean and standard deviation for each measurement. 
+- Use descriptive activity names to name the activities in the data set
+- Appropriately label the data set with descriptive variable names. 
+- From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
     
 All of these steps are carried out by the R script "analyseHumanActivityDataset.R" that calls 4 functions that carry out the individual steps. All of the files assume that they and their working directory are located in the same directory as the directory containing the UCI HAR dataset. 
 
@@ -30,34 +30,34 @@ It is called from the analyseHumanActivityDataset.R script.
 
 ## Variables and Data  
 ### analyseHumanActivityDataset.R
--activityDataFrames 	- list of dataframes obtained from load_dat()
--activityDataSet 	- dataframe obtained from calling combine_dat(activityDataFrames). This dataset is transformed into a data table that only contains means and standard deviations of measured variables by calling xtract_columns(activityDataFrames). 
--summarisedActivity 	- data table obtained from calculating the averages of each variable groubed by activity and subject. 
+- activityDataFrames 	- list of dataframes obtained from load_dat()
+- activityDataSet 	- dataframe obtained from calling combine_dat(activityDataFrames). This dataset is transformed into a data table that only contains means and standard deviations of measured variables by calling xtract_columns(activityDataFrames). 
+- summarisedActivity 	- data table obtained from calculating the averages of each variable groubed by activity and subject. 
 ### load_dat.R
--training_set		- 7352 x 561 data frame containing measurements from the UCI HAR training dataset
--test_set 		- 2947 x 561 data frame containing measurements from the UCI HAR test dataset
--training_activity 	- 7352 x 1 data frame containing activity codes from the UCI HAR training dataset in one column
--test_activity		- 2947 x 1 data frame containing activity codes from the UCI HAR test dataset in one column
--training_subject 	- 7352 x 1 data frame containing subject codes from the UCI HAR training dataset in one column
--test_subject 		- 2947 x 1 data frame containing subject codes from the UCI HAR test dataset in one column
--features		- character vector containing descriptions for the measurements in the UCI HAR dataset
+- training_set		- 7352 x 561 data frame containing measurements from the UCI HAR training dataset
+- test_set 		- 2947 x 561 data frame containing measurements from the UCI HAR test dataset
+- training_activity 	- 7352 x 1 data frame containing activity codes from the UCI HAR training dataset in one column
+- test_activity		- 2947 x 1 data frame containing activity codes from the UCI HAR test dataset in one column
+- training_subject 	- 7352 x 1 data frame containing subject codes from the UCI HAR training dataset in one column
+- test_subject 		- 2947 x 1 data frame containing subject codes from the UCI HAR test dataset in one column
+- features		- character vector containing descriptions for the measurements in the UCI HAR dataset
 ### combine_dat.R
--frames 			- list of 7 data frames containing all the data
--training_set		- 7352 x 561 data frame containing measurements from the UCI HAR training dataset
--test_set 		- 2947 x 561 data frame containing measurements from the UCI HAR test dataset
--training_activity 	- 7352 x 1 data frame containing activity codes from the UCI HAR training dataset in one column
--test_activity		- 2947 x 1 data frame containing activity codes from the UCI HAR test dataset in one column
--training_subject 	- 7352 x 1 data frame containing subject codes from the UCI HAR training dataset in one column
--test_subject 		- 2947 x 1 data frame containing subject codes from the UCI HAR test dataset in one column
--features		- character vector containing 561 descriptions for the measurements in the UCI HAR dataset
--data_set		- 10299 x 563 data frame containing annotated measurements from the reunited UCI HAR dataset
+- frames 			- list of 7 data frames containing all the data
+- training_set		- 7352 x 561 data frame containing measurements from the UCI HAR training dataset
+- test_set 		- 2947 x 561 data frame containing measurements from the UCI HAR test dataset
+- training_activity 	- 7352 x 1 data frame containing activity codes from the UCI HAR training dataset in one column
+- test_activity		- 2947 x 1 data frame containing activity codes from the UCI HAR test dataset in one column
+- training_subject 	- 7352 x 1 data frame containing subject codes from the UCI HAR training dataset in one column
+- test_subject 		- 2947 x 1 data frame containing subject codes from the UCI HAR test dataset in one column
+- features		- character vector containing 561 descriptions for the measurements in the UCI HAR dataset
+- data_set		- 10299 x 563 data frame containing annotated measurements from the reunited UCI HAR dataset
 ### xtract_columns.R
--data_set		- 10299 x 563 data frame containing annotated measurements from the reunited UCI HAR dataset
--features		- character vector containing 563 descriptions for the measurements in the UCI HAR dataset
--match_cols		- integer vector containing the indices of the 68 columns containing Stdev and Mean of measurements in the UCI HAR dataset
--motion_dat		- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset
+- data_set		- 10299 x 563 data frame containing annotated measurements from the reunited UCI HAR dataset
+- features		- character vector containing 563 descriptions for the measurements in the UCI HAR dataset
+- match_cols		- integer vector containing the indices of the 68 columns containing Stdev and Mean of measurements in the UCI HAR dataset
+- motion_dat		- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset
 ### calc_motion_avg.R
--motion_dat	- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset
+- motion_dat	- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset
 This data frame is subsequently transformed into a 360 x 68 data frame, averaging the Means and Stdevs of all measurements
 
 ## Transformations
