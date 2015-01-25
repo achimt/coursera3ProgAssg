@@ -3,7 +3,7 @@ This is a set of R files created to prepare the "Human Activity Recognition Usin
 
 It contains the following files:
 
-- analyseHumanActivitDataset.R - an R script that produces a summary file from the UCI HAR dataset. This script calls all the other functions in the order given below. 
+- run_analysis.R	- an R script that produces a summary file from the UCI HAR dataset. This script calls all the other functions in the order given below. 
 - load_dat.R 		- an R function that loads all the data files and returns them in a list
 - combine_dat.R 	- an R function that combines the data files from this list into one data frame
 - xtract_columns.R 	- an R function that extracts from the data frame columns with info on mean and standard deviation of measured variables in the UCI HAR dataset

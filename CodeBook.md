@@ -8,28 +8,28 @@ The set task was to do the following:
 - Appropriately label the data set with descriptive variable names. 
 - From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
     
-All of these steps are carried out by the R script "analyseHumanActivityDataset.R" that calls 4 functions that carry out the individual steps. All of the files assume that they and their working directory are located in the same directory as the directory containing the UCI HAR dataset. 
+All of these steps are carried out by the R script "run_analysis.R" that calls 4 functions that carry out the individual steps. All of the files assume that they and their working directory are located in the same directory as the directory containing the UCI HAR dataset. 
 
 ## Files and Dependencies
-### analyseHumanActivityDataset.R
+### run_analysis.R
 This script needs the four functions 'load_dat.R', 'combine_dat.R', 'xtract_columns.R', 'calc_motion_avg.R'. 
 It is run from the R command prompt by sourcing it with the command:
 source('$PATH_TO DIRECTORY/calc_motion_avg.R')
 ### load_dat.R
 This script assumes that it is located in the same directory as the UCI HAR data directory. 
-It is called from the analyseHumanActivityDataset.R script. 
+It is called from the run_analysis.R script. 
 ### combine_dat.R
 No dependencies. 
-This script is called from the analyseHumanActivityDataset.R script. 
+This script is called from the run_analysis.R script. 
 ### xtract_columns.R
 This script calls the libraries 'plyr' and 'dplyr'. 
-It is called from the analyseHumanActivityDataset.R script. 
+It is called from the run_analysis.R script. 
 ### calc_motion_avg.R
 This script calls the library 'dplyr'. 
-It is called from the analyseHumanActivityDataset.R script. 
+It is called from the run_analysis.R script. 
 
 ## Variables and Data  
-### analyseHumanActivityDataset.R
+### run_analysis.R
 - activityDataFrames 	- list of dataframes obtained from load_dat()
 - activityDataSet 	- dataframe obtained from calling combine_dat(activityDataFrames). This dataset is transformed into a data table that only contains means and standard deviations of measured variables by calling xtract_columns(activityDataFrames). 
 - summarisedActivity 	- data table obtained from calculating the averages of each variable groubed by activity and subject. 
@@ -64,7 +64,7 @@ It is called from the analyseHumanActivityDataset.R script.
 - motion_dat	- 10299 x 68 data table containing only Stdev and Mean of measurements in the UCI HAR dataset. This data table is subsequently transformed into a 360 x 68 data table, averaging the Means and Stdevs of all measurements
 
 ## Transformations
-### analyseHumanActivityDataset.R
+### run_analysis.R
 This is the master script calling the functions coded into the other scripts. It writes the resulting data table as a tsv file into the working directory. 
 ### load_dat.R
 load_dat() is a function that loads from the UCI HAR dataset all the data that are relevant for the assignment. It generates a list containing 6 data frames and one vector. 
