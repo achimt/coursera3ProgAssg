@@ -6,7 +6,7 @@ summarisedActivity.txt
 
 This file contains averages of the summarised activities from the UCI HAR dataset in a table with 68 columns and 360 rows. Values in the table are derived from accelerometer and gyroscope measurements that have been normalised on a scale from [-1:1]. For each subject (numbered 1-30) 6 activities were monitored: walking (WALKING), walking upstairs (UPSTAIRS), walking downstairs (DOWNSTAIRS), sitting (SITTING), standing (STANDING) and laying (LAYING). 
 
-For each subject and each of the activities, averages from measurements in three spatial dimensions taken at a frequency of 50 Hz and their standard deviations are shown for the following measurements:
+For each subject and each of the activities, averages from measurements in three spatial dimensions taken at a frequency of 50 Hz and their standard deviations are shown for the following measurements:  
 
  [3] "Time_Domain_Body_Acceleration_Mean_X"                    
  [4] "Time_Domain_Body_Acceleration_Mean_Y"                    
@@ -49,7 +49,7 @@ For each subject and each of the activities, averages from measurements in three
 [41] "Time_Domain_Body_Gyroscope_Jerk_Magnitude_Mean"          
 [42] "Time_Domain_Body_Gyroscope_Jerk_Magnitude_StdDev"        
 
-These time domain measurements were fourier transformed (using the FFT algorithm) and the means of the resulting frequency domain values are as follows:
+These time domain measurements were fourier transformed (using the FFT algorithm) and the means of the resulting frequency domain values are as follows:  
 
 [43] "Freq_Domain_Body_Acceleration_Mean_X"                    
 [44] "Freq_Domain_Body_Acceleration_Mean_Y"                    
@@ -72,7 +72,7 @@ These time domain measurements were fourier transformed (using the FFT algorithm
 [61] "Freq_Domain_Body_Acceleration_Magnitude_Mean"            
 [62] "Freq_Domain_Body_Acceleration_Magnitude_StdDev"          
 [63] "Freq_Domain_Body_Body_Acceleration_Jerk_Magnitude_Mean"  
-[64] "Freq_Domain_Body_Body_Acceleration_Jerk_Magnitude_StdDev"
+[64] "Freq_Domain_Body_Body_Acceleration_Jerk_Magnitude_StdDev"  
 [65] "Freq_Domain_Body_Body_Gyroscope_Magnitude_Mean"          
 [66] "Freq_Domain_Body_Body_Gyroscope_Magnitude_StdDev"        
 [67] "Freq_Domain_Body_Body_Gyroscope_Jerk_Magnitude_Mean"     

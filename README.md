@@ -11,7 +11,7 @@ It contains the following files:
 - README.md		- this file
 - CodeBook.md		- a detailed description of the data cleaning process
 
-All of these steps are carried out by the R script "run_analysis.R" that calls 4 fuAll of these steps are carried out by the R script "run_analysis.R" that calls 4 functions that carry out the individual steps. All of the files assume that they and their working directory are located in the same directory as the directory containing the UCI HAR dataset. 
+All of these steps are carried out by the R script "run_analysis.R" that calls 4 functions that carry out the individual steps. All of the files assume that they and their working directory are located in the same directory as the directory containing the UCI HAR dataset. 
 
 ## Files and Dependencies
 ### run_analysis.R
