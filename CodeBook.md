@@ -50,6 +50,7 @@ For each subject and each of the activities, averages from measurements in three
 [42] "Time_Domain_Body_Gyroscope_Jerk_Magnitude_StdDev"        
 
 These time domain measurements were fourier transformed (using the FFT algorithm) and the means of the resulting frequency domain values are as follows:
+
 [43] "Freq_Domain_Body_Acceleration_Mean_X"                    
 [44] "Freq_Domain_Body_Acceleration_Mean_Y"                    
 [45] "Freq_Domain_Body_Acceleration_Mean_Z"                    

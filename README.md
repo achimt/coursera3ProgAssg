@@ -1,5 +1,5 @@
 # coursera3ProgAssg
-This is a set of R files created to prepare the "Human Activity Recognition Using Smartphones Dataset Version 1.0" for further analysis
+This is a set of R files created to prepare the "Human Activity Recognition Using Smartphones Dataset Version 1.0" for further analysis.
 
 It contains the following files:
 
